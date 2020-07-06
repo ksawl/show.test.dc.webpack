@@ -1,0 +1,124 @@
+@media (min-width: 992px) {
+    /** */
+    body {
+        height: 100%;
+    }
+    /** */
+    .btn-yellow-big,
+    .btn-dark-big {
+        padding: 0 20px;
+        font-size: 20px;
+        line-height: 42px;
+    }
+    main .make-bet .bonus,
+    main .look .bonus {
+        font-size: 20px;
+        line-height: 40px;
+    }
+    /** */
+    nav .logo {
+        left: 80px;
+    }
+    nav .btn {
+        top: 40px;
+        right: 60px;
+    }
+    /** */
+    main {
+        height: 100%;
+    }
+    main .background {
+        background-size: 100% auto;
+    }
+    main .city {
+        height: 100%;
+    }
+    main .city-inner {
+        background-size: 1400px auto;
+    }
+    main .way {
+        top: 0;
+        background-size: 100% auto;
+        height: 100%;
+    }
+    /** */
+    main .car {
+        top: 30px;
+        width: 45%;
+        transform: translate(-60%, 0);
+        -webkit-transform: translate(-60%, 0);
+        -moz-transform: translate(-60%, 0);
+        -ms-transform: translate(-60%, 0);
+        -o-transform: translate(-60%, 0);
+    }
+    /** */
+    main .rider {
+        width: 60%;
+        height: 110%;
+        transform: translate(-30%, 35%);
+        -webkit-transform: translate(-30%, 35%);
+        -moz-transform: translate(-30%, 35%);
+        -ms-transform: translate(-30%, 35%);
+        -o-transform: translate(-30%, 35%);
+    }
+    main .dictor {
+        width: 50%;
+        height: 105%;
+        transform: translate(25%, 35%);
+        -webkit-transform: translate(25%, 35%);
+        -moz-transform: translate(25%, 35%);
+        -ms-transform: translate(25%, 35%);
+        -o-transform: translate(25%, 35%);
+    }
+    /** */
+    main .slogan {
+        top: 230px;
+        top: 37%;
+        transform: translate(-42%, 0) perspective(1300px) rotateY(50deg)
+            rotateX(-20deg);
+        -webkit-transform: translate(-42%, 0) perspective(1300px) rotateY(50deg)
+            rotateX(-20deg);
+        -moz-transform: translate(-42%, 0) perspective(1300px) rotateY(50deg)
+            rotateX(-20deg);
+        -ms-transform: translate(-42%, 0) perspective(1300px) rotateY(50deg)
+            rotateX(-20deg);
+        -o-transform: translate(-42%, 0) perspective(1300px) rotateY(50deg)
+            rotateX(-20deg);
+    }
+    main .slogan h1 {
+        font-size: 68px;
+        line-height: 90px;
+    }
+    main .slogan h2 {
+        font-size: 31px;
+        line-height: 35px;
+    }
+    /** */
+    main .make-bet {
+        top: auto;
+        bottom: 100px;
+    }
+    main .look {
+        top: auto;
+        bottom: 120px;
+    }
+    /** */
+    footer {
+        height: 95px;
+    }
+    footer .pay-systems {
+        bottom: 28px;
+        width: 370px;
+    }
+    footer .pay-systems a {
+        margin: 2px 20px;
+    }
+    footer .socials {
+        bottom: 40px;
+        right: 100px;
+    }
+    footer .limit {
+        bottom: 35px;
+        right: 270px;
+    }
+}
