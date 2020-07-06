@@ -1,21 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Webpack template for Landing Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Pari Match</title>
+
+    <meta name="description" content="Pari Match" />
+    <meta name="keywords" content="Pari Match" />
+
+    <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
+
+    <base href="https://kara-one.github.io/dc.test/" />
+    <meta HTTP-EQUIV="LAST-Modified" CONTENT="Thu, 25 Jun 2020 11:16:44 +0200" />
+    <meta name="REVISIT-AFTER" CONTENT="1 DAYS" />
+    <meta name="RESOURCE-TYPE" content="DOCUMENT" />
+    <meta name="DISTRIBUTION" content="GLOBAL" />
+    <meta name="COPYRIGHT" content="Copyright Pari Match" />
+
+    <meta property="og:site_name" content="Pari Match" />
+    <meta property="og:title" content="Pari Match" />
+    <meta property="og:description" content="Pari Match" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="/" />
+    <meta property="og:image" content="og_image.png" />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+
+    <link rel="icon" href="favicon.png" type="image/png">
+
+    <link rel="preload" href="img/logo.png" as="image">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500;700&family=Roboto+Mono:wght@200&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media.css" />
+    <link rel="stylesheet" href="css/media_768.css" />
+    <link rel="stylesheet" href="css/media_992.css" />
+    <link rel="stylesheet" href="css/media_1200.css" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.4/gsap.min.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            document.querySelector('base').href = window.location.href;
+        });
+    </script>
 </head>
 
 <body>
-    <div id="app">
-        <div class="wrapper">
-            <h1>Webpack template for Landing Page 124422666444</h1>
-            <hr>
-            <img src="./img/load.gif" alt="1">
-            <img src="./img/logo.svg" alt="1">
-        </div>
+    <div class="preload">
+        <div class="inner"></div>
     </div>
+    <div id="app">
+        <nav>
+            <a href="/" class="logo"></a>
+            <a href="" class="btn btn-yellow">Регистрация</a>
+        </nav>
+        <main>
+            <div class="slogan">
+                <div class="parallax" data-speed-x="40" data-speed-y="10">
+                    <h1>Делай ставки</h1>
+                    <h2>На самого быстрого пилота</h2>
+                </div>
+            </div>
+            <div class="make-bet">
+                <div class="make-bat-wrap">
+                    <a href="/" class="btn btn-yellow-big">Сделать ставку</a>
+                    <div class="bonus">+100% к депозиту</div>
+                    <a href="/" class="rules">Правила и условия</a>
+                </div>
+            </div>
+            <div class="look">
+                <div class="look-wrap">
+                    <a href="/" class="btn btn-dark-big">Смотреть</a>
+                    <div class="bonus">Детали турнира</div>
+                </div>
+            </div>
+            <div class="rider">
+                <div class="rider-inner parallax" data-speed-x="100" data-speed-y="20"></div>
+            </div>
+            <div class="dictor">
+                <div class="dictor-inner parallax" data-speed-x="100" data-speed-y="20"></div>
+            </div>
+            <div class="car">
+                <div class="car-inner parallax" data-speed-x="25" data-speed-y="10"></div>
+            </div>
+
+            <div class="way"></div>
+            <div class="city">
+                <div class="city-inner parallax" data-speed-x="15" data-speed-y="10"></div>
+            </div>
+            <div class="background"></div>
+        </main>
+        <footer>
+            <ul class="pay-systems">
+                <li><a href="/"><img src="img/ps_visa.png" alt=""></a></li>
+                <li><a href="/"><img src="img/ps_mastercard.png" alt=""></a></li>
+                <li><a href="/"><img src="img/ps_qiwi.png" alt=""></a></li>
+                <li><a href="/"><img src="img/ps_yandex_money.png" alt=""></a></li>
+            </ul>
+            <ul class="downloads">
+                <li class="ios"><a href="/"></a></li>
+                <li class="google"><a href="/"></a></li>
+            </ul>
+            <ul class="socials">
+                <li class="fb"><a href="/"></a></li>
+                <li class="vk"><a href="/"></a></li>
+            </ul>
+            <div class="limit"></div>
+        </footer>
+    </div>
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
