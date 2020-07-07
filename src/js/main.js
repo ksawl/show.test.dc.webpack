@@ -1,3 +1,5 @@
+import { Bounce, Power1, TimelineMax, TweenLite } from "gsap";
+
 $(document).ready(function () {
     var $app = $("#app"); /* our container */
     var $parallaxItems = $app.find(".parallax"); /* elements */

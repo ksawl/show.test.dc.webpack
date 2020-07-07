@@ -1,0 +1,21 @@
+.preload {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1500;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s;
+}
+
+.preload .inner {
+    background: transparent url("../../img/logo.png") center no-repeat;
+    background-size: contain;
+    width: 200px;
+    height: 100px;
+    transition: all 0.5s;
+}

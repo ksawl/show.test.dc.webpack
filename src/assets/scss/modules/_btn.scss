@@ -1,0 +1,78 @@
+.btn {
+    display: block;
+    padding: 0 27px;
+    line-height: 27px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    text-decoration: none;
+    float: left;
+    transform: skewX(-15deg);
+    transition: all 0.5s;
+}
+
+.btn-yellow {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8ff14;
+    border: 4px solid #000;
+}
+
+.btn-yellow:hover {
+    background-color: #e7cc13;
+}
+
+.btn-yellow::before,
+.btn-yellow-big::before,
+.btn-dark-big::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30%;
+    background-color: #fff;
+    width: 30px;
+    height: 100%;
+    transition: all 0.8s;
+    filter: blur(20px);
+    transform: skewX(-30deg);
+}
+
+.btn-yellow:hover::before,
+.btn-yellow-big:hover::before,
+.btn-yellow-big.hover::before,
+.btn-dark-big:hover::before {
+    left: 130%;
+}
+
+.btn-yellow-big {
+    position: relative;
+    overflow: hidden;
+    background-color: #f8ff14;
+    padding: 0 43px;
+    font-size: 27px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+.btn-yellow-big:hover,
+.btn-yellow-big.hover {
+    background-color: #e7cc13;
+}
+
+.btn-dark-big {
+    position: relative;
+    overflow: hidden;
+    background-color: #000000;
+    border: 1px solid #f8ff14;
+    padding: 0 43px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+    color: #f8ff14;
+}
+
+.btn-dark-big:hover {
+    color: #e7cc13;
+    border: 1px solid #e7cc13;
+}

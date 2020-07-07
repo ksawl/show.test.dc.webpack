@@ -45,7 +45,8 @@
     },
     "dependencies": {
         "@babel/polyfill": "^7.10.1",
-        "bootstrap": "^4.5.0"
+        "bootstrap": "^4.5.0",
+        "gsap": "^3.3.4"
     },
     "browserslist": [
         "> 1%",

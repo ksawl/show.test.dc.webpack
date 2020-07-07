@@ -1,4 +1,16 @@
-@import 'utils/libs.scss';
-@import 'utils/vars.scss';
-@import 'utils/mixins.scss';
-@import 'utils/fonts.scss';
+@import './utils/libs';
+@import './utils/vars';
+@import './utils/mixins';
+@import './utils/fonts';
+
+@import "./modules/reset";
+@import "./modules/btn";
+@import "./modules/preload";
+@import "./modules/nav";
+@import "./modules/main_block";
+@import "./modules/footer";
+
+@import "./media/320";
+@import "./media/768";
+@import "./media/992";
+@import "./media/1200";
