@@ -5,7 +5,7 @@
     font-size: 12px;
     font-weight: 700;
     text-transform: uppercase;
-    color: #000;
+    color: $colorBlack;
     text-decoration: none;
     float: left;
     transform: skewX(-15deg);
@@ -15,12 +15,12 @@
 .btn-yellow {
     position: relative;
     overflow: hidden;
-    background-color: #f8ff14;
-    border: 4px solid #000;
-}
+    background-color: $colorYellow;
+    border: 4px solid $colorBlack;
 
-.btn-yellow:hover {
-    background-color: #e7cc13;
+    :hover {
+        background-color: $colorDarkYellow;
+    }
 }
 
 .btn-yellow::before,
@@ -30,7 +30,7 @@
     position: absolute;
     top: 0;
     left: -30%;
-    background-color: #fff;
+    background-color: $colorWhite;
     width: 30px;
     height: 100%;
     transition: all 0.8s;
@@ -48,31 +48,31 @@
 .btn-yellow-big {
     position: relative;
     overflow: hidden;
-    background-color: #f8ff14;
+    background-color: $colorYellow;
     padding: 0 43px;
     font-size: 27px;
     font-weight: 700;
     line-height: 60px;
-}
 
-.btn-yellow-big:hover,
-.btn-yellow-big.hover {
-    background-color: #e7cc13;
+    :hover,
+    .hover {
+        background-color: $colorDarkYellow;
+    }
 }
 
 .btn-dark-big {
     position: relative;
     overflow: hidden;
-    background-color: #000000;
-    border: 1px solid #f8ff14;
+    background-color: $colorBlack;
+    border: 1px solid $colorYellow;
     padding: 0 43px;
     font-size: 28px;
     font-weight: 700;
     line-height: 60px;
-    color: #f8ff14;
-}
+    color: $colorYellow;
 
-.btn-dark-big:hover {
-    color: #e7cc13;
-    border: 1px solid #e7cc13;
+    :hover {
+        color: $colorDarkYellow;
+        border: 1px solid $colorDarkYellow;
+    }
 }
