@@ -1,33 +1,27 @@
 import { Bounce, Power1, TimelineMax, TweenLite } from "gsap";
 
-$(document).ready(function () {
-    var $app = $("#app"); /* our container */
-    var $parallaxItems = $app.find(".parallax"); /* elements */
-    var fixer = 0.0008; /* experiment with the value */
+/** Parallax */
+document.addEventListener("DOMContentLoaded", function () {
+    const $app = document.getElementById("app");
+    const $parallaxItems = $app.querySelectorAll(".parallax");
+    const fix = 0.0008;
 
-    $(document).on("mousemove", function (event) {
-        var pageX = event.pageX - $app.width() * 0.5;
-        /* get the mouseX - negative on left, positive on
-                               right */
-        var pageY = event.pageY - $app.height() * 0.5;
-        /* same here, get the y. use console.log(pageY) to
-                               see the values */
+    let $parallax = [].map.call($parallaxItems, (item) => {
+        return {
+            item,
+            speedX: item.getAttribute("data-speed-x"),
+            speedY: item.getAttribute("data-speed-y"),
+        };
+    });
 
-        /* here we move each item*/
-        $parallaxItems.each(function () {
-            var item = $(this);
-            var speedX = item.data("speed-x");
-            var speedY = item.data("speed-y");
+    $app.addEventListener("mousemove", (event) => {
+        let pageX = event.screenX / 2 - $app.clientWidth * 0.5;
+        let pageY = event.screenY / 2 - $app.clientHeight * 0.5;
 
-            /*TweenLite.to(item, 0.5, {
-                    x: (item.position().left + pageX * speedX )*fixer, //calculate the new X based on mouse position * speed
-                    y: (item.position().top + pageY * speedY)*fixer
-                    });*/
-
-            /* or use set - not so smooth, but better performance */
-            TweenLite.set(item, {
-                x: (item.position().left + pageX * speedX) * fixer,
-                y: (item.position().top + pageY * speedY) * fixer,
+        $parallax.forEach((item) => {
+            TweenLite.set(item.item, {
+                x: (item.item.offsetLeft + pageX * item.speedX) * fix,
+                y: (item.item.offsetTop + pageY * item.speedY) * fix,
             });
         });
     });
