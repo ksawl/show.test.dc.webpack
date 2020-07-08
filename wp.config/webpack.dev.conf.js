@@ -1,6 +1,7 @@
 const baseWabpackConfig = require("./webpack.base.conf");
 const webpack = require("webpack");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const { BaseHrefWebpackPlugin } = require("base-href-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 const PATHS = baseWabpackConfig.externals.paths;
@@ -72,6 +73,7 @@ module.exports = {
             template: `${PATHS.srcAssets}/index.html`,
             filename: "./index.html",
         }),
+        new BaseHrefWebpackPlugin({ baseHref: '/' }),
         new MiniCssExtractPlugin({
             filename: filename("css"),
             chunkFilename: fileid("css"),

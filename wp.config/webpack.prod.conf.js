@@ -1,5 +1,6 @@
 const baseWabpackConfig = require("./webpack.base.conf");
 const HTMLWebpackPlugin = require("html-webpack-plugin");
+const { BaseHrefWebpackPlugin } = require("base-href-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const OptimizeCssAssetsWebpackPlugin = require("optimize-css-assets-webpack-plugin");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
@@ -84,6 +85,9 @@ module.exports = {
             minify: {
                 collapseWhitespace: isProd,
             },
+        }),
+        new BaseHrefWebpackPlugin({
+            baseHref: "https://kara-one.github.io/dc.test_wp/",
         }),
         new MiniCssExtractPlugin({
             filename: filename("css"),
