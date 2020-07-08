@@ -10,12 +10,12 @@
     align-items: center;
     justify-content: center;
     transition: all 0.5s;
-}
 
-.preload .inner {
-    background: transparent url("../../img/logo.png") center no-repeat;
-    background-size: contain;
-    width: 200px;
-    height: 100px;
-    transition: all 0.5s;
+    .inner {
+        background: transparent url("../../img/logo.png") center no-repeat;
+        background-size: contain;
+        width: 200px;
+        height: 100px;
+        transition: all 0.5s;
+    }
 }

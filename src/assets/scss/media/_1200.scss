@@ -1,6 +1,5 @@
 @media (min-width: 1200px) {
 
-    /** */
     .btn-yellow-big,
     .btn-dark-big {
         padding: 0 30px;
@@ -8,31 +7,31 @@
         line-height: 72px;
     }
 
-    /** */
-    main .city-inner {
-        background-size: 120% auto;
-    }
+    main {
+        .city-inner {
+            background-size: 120% auto;
+        }
 
-    /** */
-    main .car {
-        top: 40px;
-    }
+        .car {
+            top: 40px;
+        }
 
-    /** */
-    main .slogan h1 {
-        font-size: 82px;
-        line-height: 100px;
-    }
+        .slogan {
+            h1 {
+                font-size: 82px;
+                line-height: 100px;
+            }
 
-    main .slogan h2 {
-        font-size: 39px;
-        line-height: 40px;
+            h2 {
+                font-size: 39px;
+                line-height: 40px;
+            }
+        }
     }
 }
 
 @media (min-width: 1440px) {
 
-    /** */
     .btn-yellow-big,
     .btn-dark-big {
         padding: 0 35px;
@@ -40,32 +39,32 @@
         line-height: 92px;
     }
 
-    /** */
-    main .slogan h1 {
-        font-size: 88px;
-        line-height: 100px;
-    }
+    main .slogan {
+        h1 {
+            font-size: 88px;
+            line-height: 100px;
+        }
 
-    main .slogan h2 {
-        font-size: 42px;
-        line-height: 40px;
+        h2 {
+            font-size: 42px;
+            line-height: 40px;
+        }
     }
 }
 
 @media (min-width: 1900px) {
 
-    /** */
     main .slogan {
         width: 1400px;
-    }
 
-    main .slogan h1 {
-        font-size: 135px;
-        line-height: 155px;
-    }
+        h1 {
+            font-size: 135px;
+            line-height: 155px;
+        }
 
-    main .slogan h2 {
-        font-size: 64px;
-        line-height: 70px;
+        h2 {
+            font-size: 64px;
+            line-height: 70px;
+        }
     }
 }

@@ -1,101 +1,100 @@
 @media (min-width: 425px) {
 
-    /** */
-    nav .logo {
-        left: 20px;
-    }
+    nav {
+        .logo {
+            left: 20px;
+        }
 
-    nav .btn {
-        right: 20px;
+        .btn {
+            right: 20px;
+        }
     }
 }
 
 @media (min-width: 460px) {
 
-    /** */
-    main .rider {
-        width: 500px;
-        height: 600px;
-    }
+    main {
+        .rider {
+            width: 500px;
+            height: 600px;
+        }
 
-    main .dictor {
-        width: 400px;
-        height: 550px;
+        .dictor {
+            width: 400px;
+            height: 550px;
+        }
     }
 }
 
 @media (min-width: 550px) {
 
-    /** */
     nav {
         height: 100px;
+
+        .logo {
+            left: 30px;
+            width: 290px;
+            height: 80px;
+        }
+
+        .btn {
+            right: 30px;
+        }
     }
 
-    nav .logo {
-        left: 30px;
-        width: 290px;
-        height: 80px;
-    }
+    main {
+        .city-inner {
+            background-size: 1700px, auto;
+        }
 
-    nav .btn {
-        right: 30px;
-    }
+        .way {
+            top: 100px;
+            background-size: 950px, auto;
+        }
 
-    /** */
-    main .city-inner {
-        background-size: 1700px, auto;
-    }
+        .car {
+            width: 400px;
+        }
 
-    main .way {
-        top: 100px;
-        background-size: 950px, auto;
-    }
+        .rider {
+            width: 600px;
+            height: 700px;
+        }
 
-    /** */
-    main .car {
-        width: 400px;
-    }
-
-    /** */
-    main .rider {
-        width: 600px;
-        height: 700px;
-    }
-
-    main .dictor {
-        width: 500px;
-        height: 700px;
+        .dictor {
+            width: 500px;
+            height: 700px;
+        }
     }
 }
 
 @media (min-width: 650px) {
 
-    /** */
-    main .car {
-        top: 120px;
-        width: 500px;
-    }
+    main {
+        .car {
+            top: 120px;
+            width: 500px;
+        }
 
-    /** */
-    main .slogan {
-        top: 300px;
-        width: 800px;
-        transform: translate(-42%, 0) perspective(1200px) rotateY(50deg) rotateX(-20deg);
-    }
+        .slogan {
+            top: 300px;
+            width: 800px;
+            transform: translate(-42%, 0) perspective(1200px) rotateY(50deg) rotateX(-20deg);
+        }
 
-    main .slogan h1 {
-        font-size: 100px;
-        line-height: 120px;
-    }
+        .slogan h1 {
+            font-size: 100px;
+            line-height: 120px;
+        }
 
-    main .slogan h2 {
-        font-size: 47px;
-        line-height: 50px;
-    }
+        .slogan h2 {
+            font-size: 47px;
+            line-height: 50px;
+        }
 
-    /** */
-    main .make-bet {
-        top: 500px;
+        .make-bet {
+            top: 500px;
+        }
     }
 
 }

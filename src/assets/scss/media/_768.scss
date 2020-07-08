@@ -21,124 +21,119 @@
         line-height: 92px;
     }
 
-    /** */
     nav {
         height: 130px;
+
+        .logo {
+            left: 40px;
+            top: 30px;
+            width: 290px;
+            height: 100px;
+        }
+
+        .btn {
+            top: 40px;
+            right: 60px;
+        }
     }
 
-    nav .logo {
-        left: 40px;
-        top: 30px;
-        width: 290px;
-        height: 100px;
-    }
-
-    nav .btn {
-        top: 40px;
-        right: 60px;
-    }
-
-    /** */
     main {
         height: 1360px;
+
+        .background {
+            background-size: 1900px auto;
+        }
+
+        .way {
+            top: 63px;
+            background-size: 1100px auto;
+        }
+
+        .car {
+            top: 110px;
+            width: 590px;
+            transform: translate(-55%, 0);
+        }
+
+        .rider {
+            top: auto;
+            bottom: 0;
+            z-index: 60;
+            transform: translate(-30%, 30%);
+        }
+
+        .dictor {
+            top: auto;
+            bottom: 0;
+            z-index: 50;
+            transform: translate(10%, 30%);
+        }
+
+        .slogan {
+            top: 350px;
+            width: 1000px;
+            transform: translate(-42%, 0) perspective(1300px) rotateY(50deg) rotateX(-20deg);
+
+            h1 {
+                font-size: 138px;
+                line-height: 170px;
+            }
+
+            h2 {
+                font-size: 67px;
+                line-height: 70px;
+            }
+        }
+
+        .make-bet {
+            top: 670px;
+            transform: translate(-80%, 0);
+            width: 370px;
+            padding-right: 10px;
+            align-items: flex-end;
+        }
+
+        .look {
+            bottom: auto;
+            top: 670px;
+            transform: translate(20%, 0);
+            width: 370px;
+            padding-left: 10px;
+            align-items: flex-start;
+        }
     }
 
-    main .background {
-        background-size: 1900px auto;
-    }
-
-    main .way {
-        top: 63px;
-        background-size: 1100px auto;
-    }
-
-    /** */
-    main .car {
-        top: 110px;
-        width: 590px;
-        transform: translate(-55%, 0);
-    }
-
-    /** */
-    main .rider {
-        top: auto;
-        bottom: 0;
-        z-index: 60;
-        transform: translate(-30%, 30%);
-    }
-
-    main .dictor {
-        top: auto;
-        bottom: 0;
-        z-index: 50;
-        transform: translate(10%, 30%);
-    }
-
-    /** */
-    main .slogan {
-        top: 350px;
-        width: 1000px;
-        transform: translate(-42%, 0) perspective(1300px) rotateY(50deg) rotateX(-20deg);
-    }
-
-    main .slogan h1 {
-        font-size: 138px;
-        line-height: 170px;
-    }
-
-    main .slogan h2 {
-        font-size: 67px;
-        line-height: 70px;
-    }
-
-    /** */
-    main .make-bet {
-        top: 670px;
-        transform: translate(-80%, 0);
-        width: 370px;
-        padding-right: 10px;
-        align-items: flex-end;
-    }
-
-    main .look {
-        bottom: auto;
-        top: 670px;
-        transform: translate(20%, 0);
-        width: 370px;
-        padding-left: 10px;
-        align-items: flex-start;
-    }
-
-    /** */
     footer {
         height: 155px;
-    }
 
-    footer .pay-systems {
-        bottom: 50px;
-    }
+        .pay-systems {
+            bottom: 50px;
 
-    footer .pay-systems a {
-        margin: 2px 20px;
-    }
+            a {
+                margin: 2px 20px;
+            }
+        }
 
-    footer .socials {
-        bottom: 100px;
-    }
+        .socials {
+            bottom: 100px;
+        }
 
-    footer .limit {
-        bottom: 55px;
+        .limit {
+            bottom: 55px;
+        }
     }
 }
 
 @media (min-width: 810px) {
-    main .city-inner {
-        background-size: 1600px auto;
-    }
+    main {
+        .city-inner {
+            background-size: 1600px auto;
+        }
 
-    main .way {
-        top: 20px;
-        background-size: 1200px auto;
-        background-position: top right;
+        .way {
+            top: 20px;
+            background-size: 1200px auto;
+            background-position: top right;
+        }
     }
 }
