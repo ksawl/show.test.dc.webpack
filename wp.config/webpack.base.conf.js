@@ -4,10 +4,10 @@ const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 const PATHS = {
     assetsDirName: "assets",
-    distDirName: "dist",
+    distDirName: "docs",
     src: path.join(__dirname, "../src"),
     srcAssets: path.join(__dirname, "../src/assets"),
-    dist: path.join(__dirname, "../dist"),
+    dist: path.join(__dirname, "../docs"),
     config: __dirname,
 };
 
