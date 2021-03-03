@@ -1,4 +1,4 @@
-import { Bounce, Power1, TimelineMax, TweenLite } from "gsap";
+import { Bounce, Power1, TweenLite, gsap } from "gsap";
 
 /** Parallax */
 document.addEventListener("DOMContentLoaded", function () {
@@ -46,7 +46,7 @@ window.addEventListener("load", (event) => {
 });
 
 function pageAnim() {
-    let tl = new TimelineMax();
+    let tl = gsap.timeline();
     tl.delay(1)
         .fromTo(
             ".preload .inner",
