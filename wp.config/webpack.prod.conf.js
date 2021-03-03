@@ -56,19 +56,20 @@ const cssLoader = (extra) => {
 };
 
 module.exports = {
-    mode: "production",
+    mode: 'production',
     output: {
-        filename: filename("js"),
+        filename: filename('js'),
+        publicPath: './',
     },
     devtool: false,
     optimization: {
         minimizer: [
             new OptimizeCssAssetsWebpackPlugin({
                 assetNameRegExp: /\.css$/g,
-                cssProcessor: require("cssnano"),
+                cssProcessor: require('cssnano'),
                 cssProcessorPluginOptions: {
                     preset: [
-                        "default",
+                        'default',
                         { discardComments: { removeAll: true } },
                     ],
                 },
@@ -81,17 +82,17 @@ module.exports = {
         new HTMLWebpackPlugin({
             hash: false,
             template: `${PATHS.srcAssets}/index.html`,
-            filename: "./index.html",
+            filename: './index.html',
             minify: {
                 collapseWhitespace: isProd,
             },
         }),
         new BaseHrefWebpackPlugin({
-            baseHref: "https://kara-one.github.io/dc.test_wp/",
+            baseHref: 'https://kara-one.github.io/dc.test_wp/',
         }),
         new MiniCssExtractPlugin({
-            filename: filename("css"),
-            chunkFilename: fileid("css"),
+            filename: filename('css'),
+            chunkFilename: fileid('css'),
         }),
     ],
     module: {
@@ -104,16 +105,16 @@ module.exports = {
                 test: /\.s[ac]ss$/,
                 use: cssLoader([
                     {
-                        loader: "resolve-url-loader",
+                        loader: 'resolve-url-loader',
                         options: {
                             sourceMap: isDev,
                         },
                     },
                     {
-                        loader: "sass-loader",
+                        loader: 'sass-loader',
                         options: {
                             // Prefer `dart-sass`
-                            implementation: require("sass"),
+                            implementation: require('sass'),
                             sourceMap: isDev,
                         },
                     },
@@ -123,13 +124,13 @@ module.exports = {
                 test: /\.(gif|png|jpe?g|svg)$/i,
                 use: [
                     {
-                        loader: "file-loader",
+                        loader: 'file-loader',
                         options: {
                             name: filename(),
                         },
                     },
                     {
-                        loader: "image-webpack-loader",
+                        loader: 'image-webpack-loader',
                         options: {
                             mozjpeg: {
                                 progressive: true,
@@ -158,7 +159,7 @@ module.exports = {
             {
                 test: /\.(woff2?|ttf|otf|eot)$/,
                 exclude: /node_modules/,
-                loader: "file-loader",
+                loader: 'file-loader',
                 options: {
                     name: filename(),
                 },
