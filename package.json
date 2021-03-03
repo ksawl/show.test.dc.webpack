@@ -1,8 +1,9 @@
 {
-    "name": "learn.webpack_landing_tpl",
+    "name": "show.test.dc.webpack",
     "version": "1.0.0",
-    "description": "Template webpack for landing page",
+    "description": "Test task for Digital Chain with Webpack",
     "main": "index.js",
+    "homepage": "https://ksawl.github.io/show.test.dc.webpack/",
     "scripts": {
         "serv": "webpack-dev-server --mode development",
         "servopen": "webpack-dev-server --mode development --open",
